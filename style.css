@@ -1,5 +1,7 @@
 html {
   height: 100%;
+  font-family: "Rampart One", cursive;
+  text-transform: uppercase;
 }
 
 body {
@@ -16,16 +18,52 @@ table {
   height: 100%;
 }
 
+h1 {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
 td {
   background-color: #E3E3E3;
 }
 
+button {
+  border: 1px solid #F5F5F5;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+button:hover {
+  border: 0;
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
 .cross-mark {
   background: #E3E3E3 url("cross-mark.png") center no-repeat;
+  background-size: auto 80%;
 }
 
 .zero-mark {
   background: #E3E3E3 url("zero-mark.png") center no-repeat;
+  background-size: auto 80%;
 }
 
 .game-container {
@@ -44,66 +82,26 @@ td {
 .functions-container {
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 10px;
+  margin-right: 50px;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  left: 15px;
+.switch__restart-input-form {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FA0606;
 }
 
-.switch input {
-  display: none;
+.switch__restart-input-form:checked {
+  background-color: #2EE59D;
 }
 
-.switch__round-slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.switch__round-slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .switch__round-slider {
-  background-color: #00D00A;
-}
-
-input:focus + .switch__round-slider {
-  box-shadow: 0 0 1px #00D00A;
-}
-
-input:checked + .switch__round-slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.switch__round-slider {
-  border-radius: 34px;
-}
-
-.switch__round-slider:before {
-  border-radius: 50%;
+.game-state-article__state-string {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #009EFF;
 }
 
 /*# sourceMappingURL=style.css.map */

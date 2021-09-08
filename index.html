@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <main class="game-container">
     <div class="functions-container">
-        <h2 class="functions-container__heading">Автоматическая перезагрузка игры</h2>
+        <h2 class="functions-container__heading">Automatic reloading of the game</h2>
         <label class="switch">
             <input class="switch__restart-input-form" id="restartInputForm" type="checkbox" checked>
             <span class="switch__round-slider"></span>
@@ -33,10 +37,12 @@
     </table>
     <div class="game-state-container">
         <article class="game-state-article">
-            <h1>Состояние игры :</h1>
+            <h1>Game State :</h1>
             <p class="game-state-article__state-string" id="pWinnerString"></p>
         </article>
-        <button class="game-state-container__restart-button" id="restartButton" onclick="restartGame()">Restart game</button>
+        <button class="game-state-container__restart-button" id="restartButton" onclick="restartGame()">Restart
+            game
+        </button>
     </div>
 </main>
 <script rel="script" src="script.js"></script>
