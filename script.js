@@ -172,13 +172,13 @@ function writeWinner() {
 
     if (gameWinnerId === 0) {
         winner = 'Draw';
-        winnerString.style.color = '#FFE600';
+        winnerString.style.color = '#E56700';
     } else if (gameWinnerId === 1) {
         winner = 'Crosses';
-        winnerString.style.color = '#FF002F';
+        winnerString.style.color = '#B80000';
     } else if (gameWinnerId === 2) {
         winner = 'Zeroes';
-        winnerString.style.color = '#0077FF';
+        winnerString.style.color = '#030084';
     }
 
     winnerString.innerHTML = `${winner} won!`;
